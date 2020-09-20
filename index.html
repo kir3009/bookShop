@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Shop</title>
+</head>
+<body>
+<header class="header">
+    <div class="container-xxl">
+        <div class="navbar">
+            <div class="navbar__wrapper">
+                <div class="navbar__item">Главная</div>
+                <div class="navbar__item">О нас</div>
+                <div class="navbar__item">Контакты</div>
+                <div class="navbar__item">+79032815637</div>
+            </div>
+        </div>
+        <div class="home">
+            <div class="home__content">
+                <div class="home__title animate__animated animate__fadeInLeft"><h1>Онлайн магазин книг</h1></div>
+                <div class="home__subtitle animate__animated animate__fadeInLeft"><h2>Принимаем заказы 24/7</h2></div>
+                <button id="scroll" class="home__button animate__animated animate__rubberBand">Заказать</button>
+            </div>
+            <div class="home__img"><img src="images/image%204.png" alt=""></div>
+        </div>
+    </div>
+</header>
+<section class="section">
+    <div class="container-xxl">
+        <div class="about">
+            <div class="about__header">
+                <div class="section__title"><h1>Привет, дорогой читатель!</h1></div>
+                <div class="section__text"><p>Мы рады приветствовать тебя в нашем онлайн-магазине. Здесь ты можешь заказать любую книгу на свой вкус, а мы доставим её до самого порога.</p></div>
+            </div>
+            <div class="about__items">
+                <div class="about__item about__item-work">
+                    <div class="about__item__content">
+                        <div class="about__item__title"><h2>Как мы работаем?</h2></div>
+                        <div class="about__item__text"><p>Заполняя заявку ниже, мы начинаем тут же искать эту книгу. Доставка прямо в твой город! И будь уверен мы найдем твою книгу, связавшись с тобой.</p></div>
+                    </div>
+                    <div class="about__item__img"><img src="images/work.png" alt=""></div>
+                </div>
+                <div class="about__item about__item-cost">
+                    <div class="about__item__img"><img src="images/cost.png" alt=""></div>
+                    <div class="about__item__content">
+                        <div class="about__item__title"><h2>Сколько стоит?</h2></div>
+                        <div class="about__item__text"><p>Ты заказываешь книгу по себестоимости, но с учетом доставки в твой город и местных налогов.</p></div>
+                    </div>
+                </div>
+                <div class="about__item about__item-question">
+                    <div class="about__item__content">
+                        <div class="about__item__title"><h2>Остались вопросы?</h2></div>
+                        <div class="about__item__text"><p>Позвони прямо сейчас и наши менеджеры ответят тебе на все твои вопросы с удовольствием!</p></div>
+                    </div>
+                    <div class="about__item__img"><img src="images/question.png" alt=""></div>
+                </div>
+                <img id="scrollTo" class="request" src="images/Vector.png" alt="Vector">
+                    <div class="request__wrap">
+                        <div class="request__title"><h1>Оставить заявку</h1></div>
+                        <form action="#">
+                            <label>
+                                <input type="text" placeholder="Имя">
+                            </label>
+                            <label>
+                                <input type="text" placeholder="Фамилия">
+                            </label>
+                            <label>
+                                <input type="text" placeholder="Тел">
+                            </label>
+                            <label>
+                                <input type="text" placeholder="E-mail">
+                            </label>
+                        </form>
+                        <a href="#" class="js-open-modal" data-modal="1"><button class="request__button">Заказать</button>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<div class="popup" id="overlay-modal"></div>
+
+<div class="modal" data-modal="1">
+    <a href="#" class="js-modal-close"><i class="fas fa-times popup__cross"></i></a>
+    <div class="popup__wrap">
+        <div class="popup__img"><img src="images/popup.png" alt="popup"></div>
+        <div class="popup__content">
+            <div class="popup__title"><h2>Заявка принята!</h2></div>
+            <div class="popup__text"><p>Спасибо, что оставили заявку. Мы постараемся связаться с Вами в течении пару часов!</p></div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
